@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Cofre Premiado</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>🔐 Cofre Premiado</h1>
+
+        <p class="instrucoes">
+            Escolha um dos cofres para tentar encontrar o prêmio!
+            Cuidado: um deles pode fugir!
+        </p>
+
+        <div class="placar">
+            <p>Tentativas: <span id="tentativas">0</span></p>
+            <p>Vitórias: <span id="vitorias">0</span></p>
+        </div>
+
+        <div class="arena" id="arena">
+            <button class="btn-cofre cofre1" id="cofre1">Cofre 1 🔒</button>
+            <button class="btn-cofre cofre2" id="cofre2">Cofre 2 🔒</button>
+            <button class="btn-cofre cofre3" id="cofre3">Cofre 3 🔒</button>
+        </div>
+
+        <p id="mensagem" class="mensagem" aria-live="polite">
+            Boa sorte!
+        </p>
+
+        <div class="acoes">
+            <button id="btnReiniciar" class="btn-reiniciar">
+                🔄 Jogar Novamente
+            </button>
+
+            <button id="btnZerar" class="btn-zerar">
+                🗑️ Zerar Contadores
+            </button>
+        </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
